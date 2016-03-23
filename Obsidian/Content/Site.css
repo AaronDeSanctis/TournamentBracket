@@ -1,0 +1,360 @@
+﻿body {
+    min-height: 100%;
+}
+html{
+  position:relative; 
+  min-height:100%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color:black;
+  color: ButtonShadow;
+}
+html, body {
+    height: 100%; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:50px;
+    background-color:black;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-top:ridge;
+    border-color: darkgray;
+    padding-top: 13px;
+}
+a{
+    border: 1px inset;
+}
+.TopLeftContainer{
+    position: fixed;
+    top: 70px;
+    left: 30px;
+}
+.TopLeftContainer2{
+    position: fixed;
+    top: 110px;
+    left: 30px;
+}
+.TopLeftContainer3{
+    position: fixed;
+    top: 150px;
+    left: 30px;
+}
+.TopLeftContainer4{
+    position: fixed;
+    top: 190px;
+    left: 30px;
+}
+.MiddleContainer{
+    position: fixed;
+    top: 170px;
+    right: 830px;
+}
+.MiddleLowContainer{
+    position: fixed;
+    top: 410px;
+    right: 844px;
+}
+.BottomLeftContainer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.BottomRightContainer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding-left:0;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.navbar {
+    float:left;
+    background-color:black;
+    color: white;
+    font-weight: bold;
+    border-bottom:ridge;
+    border-color: darkgray;
+}
+.nav.navbar-nav.nav li a {
+    background-color:black;
+    color: white;
+    font-weight: bold;
+}
+.nav.navbar-nav.nav li a:hover {
+    background-color:black;
+    color: darkgray;
+    font-weight: bold;
+}
+.navbar-header.nav a{
+    background-color:black;
+    color: white;
+    font-weight: bold;
+    float:left;
+}
+.navbar-brand{
+    background-color:black;
+    color: white;
+    font-weight: bold;
+    border-left: 2px inset;
+    float:left;
+}
+.navbar-brand:hover{
+    background-color:black;
+    color: darkgray;
+    font-weight: bold;
+}
+.navbar-toggle {
+    background-color:black;
+    color: white;
+    font-weight: bold;
+    float:left;
+}
+.navbar-toggle:hover{
+    background-color:black;
+    color: darkgray;
+    font-weight: bold;
+}
+.dropdown-submenu:hover > a:after {
+    background-color:black;
+    color: darkgray;
+    font-weight: bold;
+}
+.nav.navbar-nav {
+    background-color:black;
+    color: white;
+    font-weight: bold;
+    float:left;
+}
+.navbar-inverse .navbar-brand{
+    color:white;
+}
+.navbar-inverse .navbar-brand:hover{
+    color:darkgray;
+}
+.Search{
+    height: 40px;
+    padding: 5px;
+    margin-top:5px;
+    float:left;
+}
+.SearchBox{
+    background-color:white;
+    width: 200px;
+    border:ridge;
+    border-color: darkgray;
+    color:darkgray;
+    float:left;
+}
+.SearchIcon{
+    background-color:black;
+    width: 40px;
+}
+.ChatBox{
+    height:500px;
+    width:1100px;
+    padding-top:5px;
+    background-color:white;
+    color:black;
+     position: fixed;
+    bottom: 63px !important;
+    border:ridge;
+    border-color:darkgray;
+    border-width:15px;
+    /*left: 0 !important;
+    right: 0 !important;*/
+}
+.ChatInput{
+    width:880px;
+    max-width:880px;
+    background-color:white;
+    color:black;
+     position: fixed;
+     border:ridge;
+    border-color:darkgray;
+    border-width:15px;
+     border:ridge;
+     bottom:93px;
+     width:1100px;
+     right:615px;
+}
+.ChatSend{
+    width:175px;
+     position: fixed;
+     bottom:93px;
+     right:435px;
+}
+.tagbox{
+    width:185px;
+    border:none;
+    background-color:white !important;
+    color: blue;
+
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.ui-menu-item{
+    padding-top:50px;
+    background-color:white !important;
+    text-wrap:normal;
+    width: 100px;
+}
+html, body, .container-fluid{
+    min-height:100% ;
+    min-width:100%;
+}
+
+#divusers{
+    width:20%;
+    float:left;
+    height:100%;
+    bottom:auto;
+    max-height:700px;
+    border-left: 2px inset;
+    padding: 4px;
+}
+
+#divLogin{
+    margin:400px 460px;
+    left:300px;
+    position: relative;
+    bottom:75px;
+}
+#divChat{
+    height:100%;
+} 
+#divChatWindow{
+    /*position:fixed;
+    bottom: 50px;
+    margin:450px auto;
+    left: 0;
+    right: 0;*/
+    right:200px;
+    width:80%;
+    float:left;
+    max-height:700px;
+    height:100%;
+    padding-left:3px;
+}
+.userName{
+    border: 2px outset;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.message{
+    padding-left: 2px;
+}
+.messageBar{
+    bottom: 0px;
+    margin: 0 auto; 
+    position:absolute;
+    width:75%;
+}
+#chatContent{
+    bottom: 28px;   
+    margin: 0 auto; 
+    width:75%;
+    height:100%;
+    border: 2px inset;
+    padding-top:7px;
+}
+#header{
+    position:fixed;
+    top: 50px;
+    height:70px;
+    width:100%;
+    color:white;
+    font-size:34px;
+    text-align:center;
+    padding-top:10px;
+}
+#chatTitle{
+    width:100%;
+    height:50px;
+}
+#divTitle{
+    height:50px;
+    text-align:center;
+}
+#divContainer{
+    top: 120px;
+    position: fixed;
+    bottom: 50px;
+    left: 100px;
+    right: 100px;
+    background-color:ghostwhite;
+}
+.classRoom{
+    width:50%;
+}
+#txtMessage{
+    max-width:684px;
+    width:681px;
+    float:left;
+    height:50px;
+    left:5px;
+    padding: 3px;
+}
+#btnSendMsg{
+    width:171px;
+    float:left;
+    height:50px;
+}
+.user{
+    border:2px outset;
+    width:100%;
+}
+.user:hover{
+    background-color:#000;
+    color:#FFF;
+}
+.loginUser:hover{
+
+}
+.loginUser{
+    border: 2px outset;
+}
+.chatRoom .content .chatWindow {
+    overflow-y: scroll;
+}
+.draggable{
+    border: 2px outset;
+    float:left;
+    width:220px;
+    left:7px;
+    margin:3px;
+    overflow-y:scroll;
+    max-height:220px;
+}
+userHeader{
+    border-bottom:2px inset;
+}
+.selText{
+    border:2px outset;
+    margin:2px;
+}

@@ -1,0 +1,73 @@
+﻿@model Obsidian.Models.UserProfileViewModel
+
+@{
+    ViewBag.Title = "UserProfile";
+}
+
+<h2>UserProfile</h2>
+
+<div>
+    <h4>UserProfileViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeamName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeamName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GameOfChoice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameOfChoice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Wins)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Wins)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WinRatio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WinRatio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Losses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Losses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalMatches)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalMatches)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Coins)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coins)
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,88 @@
+﻿@model Obsidian.Models.TournamentModels.Match
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TeamOne.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeamOne.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeamTwo.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeamTwo.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tournament.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tournament.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeamOneIsWinner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeamOneIsWinner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeamTwoIsWinner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeamTwoIsWinner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsLosersFinals)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsLosersFinals)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsWinnersFinals)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsWinnersFinals)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsGrandFinals)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsGrandFinals)
+        </dd>
+        <dd>
+            @Html.HiddenFor(model => model.VideoFile)
+        </dd>
+    </dl>
+    <video id="Video" class="MiddleContainer" controls autoplay>
+        <source src="../../@string.Format("{0}.webm", @Model.VideoFile)" type="video/webm">
+    </video>
+    <audio id="Audio" class="MiddleLowContainer" controls autoplay>
+        <source src="../../@string.Format("{0}.wav", @Model.VideoFile)" type="audio/wav">
+    </audio>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
